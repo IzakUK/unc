@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+
+.video-background {
+    position: absolute;
+    top: 0; /*Compatability just in case*/
+    left: 0; /*Compatability just in case*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0; /*Compatability just in case*/
+    left: 0; /*Compatability just in case*/
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay 50% opacity */
+}
+.content {
+    position: relative;
+}
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+#timer {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
